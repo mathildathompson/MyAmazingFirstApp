@@ -3,12 +3,13 @@ body {
 }
 
 h1 {
-  font-size: 32pt;
+  font-size: 40pt;
   text-align: center;
+  color: #bb00bb;
 }
 
 img {
-  border: 2px solid green; 
+  border: 5px solid green; 
 }
 
 div.flash {
