@@ -30,10 +30,16 @@ div.form {
 	width:50px;
     height: 50px;
     border-radius:50%;
-    background-color:red;
+    background-color:#bb00bb;
     margin-top: 10px;
     font-family: cursive;
     font-size: 12px;
     }
 
+h3.person {
+	font-family: cursive;
+	margin-left: 150px;
+	margin-bottom: 0px;
+	margin-top: 0px;
+}
  

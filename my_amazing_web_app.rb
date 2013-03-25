@@ -11,7 +11,7 @@ get '/' do
 end
 
 post '/submit' do
-  @message = "Someone thought your image was #{params[:answer]}"
+  @message = "#{params[:full_name]} you chose #{params[:answer]} puppies"
   
   # Change these to match your Twilio account settings 
   @account_sid = "AC90ac63932da17a7495ae86ce14a10f8a"
