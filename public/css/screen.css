@@ -9,7 +9,9 @@ h1 {
 }
 
 img {
-  border: 5px solid green; 
+  border: 7px solid blue;  
+  width: 400px;
+  margin-left: 150px;
 }
 
 div.flash {

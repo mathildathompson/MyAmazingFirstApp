@@ -14,16 +14,16 @@ post '/submit' do
   @message = "Someone thought your image was #{params[:answer]}"
   
   # Change these to match your Twilio account settings 
-  @account_sid = "AC4af5936d0ed441b9f4578c1c951be519"
-  @auth_token = "d409d52e7f3d2ee809c94b4d68910013"
+  @account_sid = "AC90ac63932da17a7495ae86ce14a10f8a"
+  @auth_token = "f032751ec043326954be6d67b3b09a2d"
   
   # Set up a client to talk to the Twilio REST API
   @client = Twilio::REST::Client.new(@account_sid, @auth_token)
     
   @account = @client.account
   @sms = @account.sms.messages.create({
-    :from => '+13475351163', 
-    :to => '+16462837437',
+    :from => '+441173251793', 
+    :to => '+447867986492',
     :body => @message
   })
   
