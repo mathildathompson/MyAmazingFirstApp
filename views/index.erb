@@ -7,43 +7,92 @@
   </head>
   
   <body>
-    <h1>New York Puppy App</h1>
-    
-    <% if flash[:notice] %>
-      <div class="flash">
-        <%= flash[:notice] %>
+    <nav class='nav'>
+      <div class='bitcoinquiz'>
+        <h1>Bitcoin Quiz</h1> 
       </div>
-    <% end %>
-    
-    <div>
-      <img src="http://dgicdplf3pvka.cloudfront.net/854494/akc-harlequin-great-dane-puppydog-great-dane-puppy-06373b76-fb1a-4b1b-ba98-0b48f612db6d.jpg" />
-    </div>
 
-    <div>
-      <h3 class="person"> What is your full name?</h3>
+      <div class='decoded'>
+        <h1>Decoded presenation July 13</h1> 
+      </div>
+    </nav>
+    
+    <%# if flash[:notice] %>
+      <div class="flash">
+        <%#= flash[:notice] %>
+      </div>
+    <%# end %>
+    
+    <div class="image">
+      <img src="http://www.bitcoinrecord.com/wp-content/uploads/2013/06/9Bitcoin.jpg" />
     </div>
 
     <div class = "form">
       <form action="/submit" method="POST">
+        <div>
+           <h3 class="person"> What is your full name?</h3>
+        </div>
         
         <input type= "text" name="full_name"/>
 
-        <h3>What color puppy are you looking for?</h3>
+        <div>
+           <h3 class="person"> What is your phone number?</h3>
+        </div>
+        
+        <input type= "integer" name="phone_number"/>
+
+        <h3>How many bitcoins will there be in circulation in 2140?</h3>
         
         <div>
-          <label form="answer">Grey Tiger</label>
-          <input type="radio" name="answer" value="Grey Tiger"/>
+          <label form="answer1">21 million</label>
+          <input type="checkbox" name="answer1" value="21 million"/>
         <div>
         
         <div>
-          <label form="answer">Harlequin</label>
-          <input type="radio" name="answer" value="Harlequin" />
+          <label form="answer1">24 million</label>
+          <input type="checkbox" name="answer1" value="24 million" />
         </div>
         
         <div>
-          <label for="answer">Blue</label>
-          <input type="radio" name="answer" value="Blue" />
+          <label for="answer1">26 million</label>
+          <input type="checkbox" name="answer1" value="26 million" />
         </div>
+
+         <h3>What year was Bitcoin first described in a scientific paper?</h3>
+        
+        <div>
+          <label form="answer2">2004</label>
+          <input type="checkbox" name="answer2" value="2004"/>
+        <div>
+        
+        <div>
+          <label form="answer2">2008</label>
+          <input type="checkbox" name="answer2" value="2008" />
+        </div>
+        
+        <div>
+          <label for="answer2">2010</label>
+          <input type="checkbox" name="answer2" value="2010" />
+        </div>
+
+         <h3>How much is the Bitcoin cryptocurrency currently worth?</h3>
+        
+        <div>
+          <label form="answer">1.5 billion US dollars</label>
+          <input type="checkbox" name="answer" value="1.5 billion US dollars"/>
+        <div>
+        
+        <div>
+          <label form="answer">1 billion US dollars</label>
+          <input type="checkbox" name="answer" value="1 billion US dollars" />
+        </div>
+        
+        <div>
+          <label for="answer">0.8 billion US dollars</label>
+          <input type="checkbox" name="answer" value="0.8 billion US dollars" />
+        </div>
+
+
         
         <div>
           <label for="tc">

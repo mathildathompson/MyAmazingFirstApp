@@ -1,4 +1,4 @@
-body {
+/*body {
   font-family: "Lucida Bright", Georgia, serif;  
 }
 
@@ -41,5 +41,40 @@ h3.person {
 	margin-left: 150px;
 	margin-bottom: 0px;
 	margin-top: 0px;
+}*/
+
+.nav{
+  background-color:lightblue;
+  height:60px;
 }
+
+.bitcoinquiz{
+    width:300px;
+    float:left;
+   /* background-color:red;*/
+ }
+
+ .bitcoinquiz h1{
+  margin-left:5%;
+ }
+  
+.decoded{
+  margin-left: 950px;
+}
+
+.decoded h1{
+  padding-top: 5%;
+}
+
+.image{
+  /*width:300px;*/
+   
+}
+
+img{
+  border: 3px solid black;
+  text-align: center;
+  width:300px;
+}
+
  
