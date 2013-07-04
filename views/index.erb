@@ -23,39 +23,40 @@
       </div>
     <%# end %>
     
-    <div class="image">
+   <!--  <div class="image">
       <img src="http://www.bitcoinrecord.com/wp-content/uploads/2013/06/9Bitcoin.jpg" />
-    </div>
+    </div> -->
 
     <div class = "form">
       <form action="/submit" method="POST">
-        <div>
-           <h3 class="person"> What is your full name?</h3>
-        </div>
-        
-        <input type= "text" name="full_name"/>
 
-        <div>
-           <h3 class="person"> What is your phone number?</h3>
+        <div class='name'>
+           <h3> What is your full name?</h3>
+           <input type= "text" name="full_name"/>
         </div>
-        
-        <input type= "integer" name="phone_number"/>
 
-        <h3>How many bitcoins will there be in circulation in 2140?</h3>
-        
-        <div>
-          <label form="answer1">21 million</label>
-          <input type="checkbox" name="answer1" value="21 million"/>
-        <div>
-        
-        <div>
-          <label form="answer1">24 million</label>
-          <input type="checkbox" name="answer1" value="24 million" />
+        <div class='number'>
+           <h3> What is your phone number?(please include country code)</h3>
+           <input type= "integer" name="phone_number"/>
         </div>
-        
-        <div>
-          <label for="answer1">26 million</label>
-          <input type="checkbox" name="answer1" value="26 million" />
+
+        <div class='question1'>
+          <h3>Q1/ How many bitcoins will there be in circulation in 2140?</h3>
+          
+          <div>
+            <label form="answer1">21 million</label>
+            <input type="checkbox" name="answer1" value="21 million"/>
+          </div>
+          
+          <div>
+            <label form="answer1">24 million</label>
+            <input type="checkbox" name="answer1" value="24 million" />
+          </div>
+          
+          <div>
+            <label for="answer1">26 million</label>
+            <input type="checkbox" name="answer1" value="26 million" />
+          </div>
         </div>
 
          <h3>What year was Bitcoin first described in a scientific paper?</h3>
@@ -94,16 +95,16 @@
 
 
         
-        <div>
+        <!-- <div>
           <label for="tc">
             I certify that I am sane and capable of making this 
             decision.
           <label>
           <input type="checkbox" name="tc" value="1"/>
-        </div>
+        </div> -->
         
-        <div>
-          <input id="button" type="submit" name="submit" value="Submit" />
+        <div class='submit'>
+          <input id="button" style="font-face: 'Comic Sans MS'; font-size: larger; color: black; border: 3pt ridge lightgrey" type="submit" name="submit" value="Submit" />
         </div>
       
       </form>
