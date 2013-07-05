@@ -1,11 +1,14 @@
 require 'twilio-ruby'
 require 'sinatra'
 # require 'slim'
-require 'sinatra/flash'
+# require 'sinatra/flash'
 require 'pry'
+# require 'rack-coffee'
+# require 'config.ru'
 
 enable :sessions
 set :session_secret, 'super secret'
+# set :port, 20773
 # use Rack::Flash
 
 get '/' do
