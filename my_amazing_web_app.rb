@@ -17,25 +17,25 @@ end
  
 post '/submit' do
   # binding.pry
-  if params['answer1'] == '21 million' && params['answer2'] == '2008' && params['answer'] == "1 billion US dollars"
+  if params['answer1'] == 'Cryptocurrency' && params['answer2'] == '2008' && params['answer'] == "1 billion US dollars"
   @message = "#{params[:full_name]} your answers were 1) #{params[:answer1]} 2) #{params[:answer2]} 3)#{params[:answer]} and you scored 100% "
   # binding.pry
-  elsif params['answer1'] == '21 million' && params['answer2'] == '2008' && params['answer'] != "1 billion US dollars"
+  elsif params['answer1'] == 'Cryptocurrency' && params['answer2'] == '2008' && params['answer'] != "1 billion US dollars"
   @message = "#{params[:full_name]} your answers were 1) #{params[:answer1]} 2) #{params[:answer2]} 3)#{params[:answer]} and you scored 66.6% "
   # binding.pry
-  elsif params['answer1'] != '21 million' && params['answer2'] == '2008' && params['answer'] == "1 billion US dollars"
+  elsif params['answer1'] != 'Cryptocurrency' && params['answer2'] == '2008' && params['answer'] == "1 billion US dollars"
   @message = "#{params[:full_name]} your answers were 1) #{params[:answer1]} 2) #{params[:answer2]} 3)#{params[:answer]} and you scored 66.6% "
   # binding.pry
-  elsif params['answer1'] == '21 million' && params['answer2'] != '2008' && params['answer'] == "1 billion US dollars"
+  elsif params['answer1'] == 'Cryptocurrency' && params['answer2'] != '2008' && params['answer'] == "1 billion US dollars"
   @message = "#{params[:full_name]} your answers were 1) #{params[:answer1]} 2) #{params[:answer2]} 3)#{params[:answer]} and you scored 66.6% "
   # binding.pry
-  elsif params['answer1'] == '21 million' && params['answer2'] != '2008' && params['answer'] != "1 billion US dollars"
+  elsif params['answer1'] == 'Cryptocurrency' && params['answer2'] != '2008' && params['answer'] != "1 billion US dollars"
   @message = "#{params[:full_name]} your answers were 1) #{params[:answer1]} 2) #{params[:answer2]} 3)#{params[:answer]} and you scored 33.3% "
 
-  elsif params['answer1'] != '21 million' && params['answer2'] != '2008' && params['answer'] == "1 billion US dollars"
+  elsif params['answer1'] != 'Cryptocurrency' && params['answer2'] != '2008' && params['answer'] == "1 billion US dollars"
   @message = "#{params[:full_name]} your answers were 1) #{params[:answer1]} 2) #{params[:answer2]} 3)#{params[:answer]} and you scored 33.3% "
 
-  elsif params['answer1'] != '21 million' && params['answer2'] == '2008' && params['answer'] != "1 billion US dollars"
+  elsif params['answer1'] != 'Cryptocurrency' && params['answer2'] == '2008' && params['answer'] != "1 billion US dollars"
   @message = "#{params[:full_name]} your answers were 1) #{params[:answer1]} 2) #{params[:answer2]} 3)#{params[:answer]} and you scored 33.3% "
   
   else
